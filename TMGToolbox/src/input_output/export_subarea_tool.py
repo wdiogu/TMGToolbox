@@ -138,6 +138,7 @@ class ExportSubareaTool(_m.Tool()):
         rGap,
         brGap,
         normGap,
+        PerformanceFlag,
         RunTitle,
         LinkTollAttributeId,
         xtmf_NameString,
@@ -202,6 +203,7 @@ class ExportSubareaTool(_m.Tool()):
         self.brGap = brGap
         self.normGap = normGap
         self.RunTitle = RunTitle[:25]
+        self.PerformanceFlag = PerformanceFlag
         if str(xtmf_BackgroundTransit).lower() == "true":
             self.BackgroundTransit = True
         else:
